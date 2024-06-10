@@ -11,10 +11,10 @@ function Sidebar({ setOpen,open }) {
                 <img className='h-[30px] w-[30px]' src="https://cdn2.iconfinder.com/data/icons/office-and-business-special-set-2/260/31-512.png" />
                 <span className="ml-3 sm:ml-[5px] text-xl">Ituotor</span>
             </a> */}
-            <div className='pr-[170px]'>Home</div>
-            <div className='pr-[170px]'>About</div>
-            <div className='pr-[170px]'>Services</div>
-            <div className='pr-[170px]'>Login</div>
+            <div className='pr-[170px]' onClick={()=>setOpen(false)}>Home</div>
+            <div className='pr-[170px]' onClick={()=>setOpen(false)}>About</div>
+            <div className='pr-[170px]' onClick={()=>setOpen(false)}>Services</div>
+            <div className='pr-[170px]' onClick={()=>setOpen(false)}>Login</div>
         </div>
     )
 }

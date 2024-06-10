@@ -11,10 +11,10 @@ function Navbar({open,setOpen}) {
                     <span className="ml-3 sm:ml-[5px] text-xl">Ituotor</span>
                 </a>
                 <nav className="lg:flex md:flex sm:flex items-center justify-center s:hidden">
-                    <a className="mr-5 sm:mr-2px hover:text-blue-800 cursor-pointer">Home</a>
-                    <a className="mr-5 sm:mr-2px hover:text-blue-800 cursor-pointer">About</a>
-                    <a className="mr-5 sm:mr-2px hover:text-blue-800 cursor-pointer">Services</a>
-                    <a className="mr-5 sm:mr-2px hover:text-blue-800 cursor-pointer">Blogs</a>
+                    <a className="mr-5 sm:mr-2px hover:text-blue-800 cursor-pointer" href='/'>Home</a>
+                    <a className="mr-5 sm:mr-2px hover:text-blue-800 cursor-pointer" href='/'>About</a>
+                    <a className="mr-5 sm:mr-2px hover:text-blue-800 cursor-pointer" href='/'>Services</a>
+                    <a className="mr-5 sm:mr-2px hover:text-blue-800 cursor-pointer" href='/'>Blogs</a>
                     <button className="items-center bg-blue-100 border-0 py-1 px-3 focus:outline-none hover:bg-blue-400 hover:text-white rounded">Login
                     </button>
                 </nav>
