@@ -2,28 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+}
+.background-img{
+  /* background: url('https://politemail.com/wp-content/uploads/2021/03/AdobeStock_209900715-999x1024.png'); */
+
+}
+
+.card-wrapper {
+  overflow: hidden;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+.scroll-container {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.card {
+  display: none;
+  height: 200px;
+  border-radius: 10px;
+  width: 100%;
+  border: 1px solid #ddd;
+  background-color: #f1f1f1bb;
+}
+.theme-img{
+
+}
+
+.card.active {
+  display: block;
 }
 
 @layer utilities {
